@@ -27,52 +27,6 @@ public class SubToSRT {
 		
 		JSONReader("/Users/weixu/Desktop/test.srt.sjson");
 		
-//		Pattern p = Pattern.compile(
-//				"<li data-index=\"([0-9]+)\" data-start=\"([0-9]+)\"[^>]*>([^<]*)</li>");
-//		
-//		BufferedReader in = new BufferedReader(
-//				new FileReader(new File("/Users/weixu/Desktop/subv11.txt")));
-//		
-//		String line = in.readLine();
-//		
-//		SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss,SSSS");
-//		format.setTimeZone(TimeZone.getTimeZone("GMT"));
-//		
-
-//		
-//		while (line != null) {
-//			System.err.println(line);
-//			Matcher m = p.matcher(line);
-//			line = in.readLine();
-//			int prevTime = 0;
-//			StringBuffer sb = new StringBuffer();
-//			int cnt = -1;
-//			while (m.find()) {
-//				int timeMs = Integer.parseInt(m.group(2));
-//				
-//				sb.append(m.group(3)).append(" ");
-//				if (prevTime < 0) {
-//					prevTime = timeMs;
-//					continue;
-//				}
-//
-//				if (timeMs - prevTime > 7000) {
-//					String prevTimeStr = format.format(new Date(prevTime + DELAY_MS));
-//					String startTimeStr = format.format(new Date(timeMs + DELAY_MS));
-//					System.err.print((cnt++) + "\r\n");
-//					System.err.print(prevTimeStr + " --> " + startTimeStr + "\r\n");
-//					System.err.print(sb.toString() + "\r\n");
-//					System.err.print("\r\n");
-//					sb.delete(0, sb.length());
-//					prevTime = timeMs;
-//				}
-//			};
-//		}
-//		
-//		out.flush();
-//		out.close();
-		
-		
 	}
 	
 	public static void JSONReader(String fileName) throws FileNotFoundException {
