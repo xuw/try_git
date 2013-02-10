@@ -13,20 +13,17 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
-
 public class SubToSRT {
 	
 	static final int DELAY_MS = 2000;
 	static final int MIN_SHOW_MS = 7000;  // minimal show time for a block of text.
 	
 	public static void main(String[] args) throws Exception {
-		
 		// output file
 		PrintStream out = new PrintStream(new File("/Users/weixu/Desktop/lecture11.srt"));
 		System.setErr(out);
 		
-		JSONReader("/Users/weixu/Desktop/test.srt.sjson");
-		
+		JSONReader("/Users/weixu/Desktop/test.srt.sjson");	
 	}
 	
 	public static void JSONReader(String fileName) throws FileNotFoundException {
